@@ -3,11 +3,11 @@ package bleve
 import (
 	"bytes"
 	"context"
-	"errors"
+	"fmt"
 	"github.com/blevesearch/bleve"
 	"github.com/whosonfirst/go-whosonfirst-search/filter"
 	"github.com/whosonfirst/go-whosonfirst-search/fulltext"
-	"github.com/whosonfirst/go-whosonfirst-spr"
+	"github.com/whosonfirst/go-whosonfirst-spr/v2"
 	"net/url"
 )
 
@@ -52,5 +52,24 @@ func (ftdb *BleveFullTextDatabase) IndexFeature(ctx context.Context, f []byte) e
 }
 
 func (ftdb *BleveFullTextDatabase) QueryString(ctx context.Context, q string, filters ...filter.Filter) (spr.StandardPlacesResults, error) {
-	return nil, errors.New("Not implemented")
+
+	bleve_query := bleve.NewQueryStringQuery(q)
+
+	req := bleve.NewSearchRequest(bleve_query)
+	rsp, err := ftdb.index.Search(req)
+
+	if err != nil {
+		return nil, fmt.Errorf("Failed to query '%s', %w", q, err)
+	}
+
+	for  range rsp.Hits {
+
+		// TBD:
+		// Fetch doc with go-reader.Reader instance or ... ?
+		// Create stripped down ID-only SPR interface ... ?
+		
+		// log.Println(doc.ID)
+	}
+
+	return nil, fmt.Errorf("Not implemented")
 }
