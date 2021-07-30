@@ -75,6 +75,8 @@ github.com/golang/snappy
 github.com/mschoch/smat
 # github.com/philhofer/fwd v1.0.0
 github.com/philhofer/fwd
+# github.com/sfomuseum/go-edtf v0.2.3
+github.com/sfomuseum/go-edtf
 # github.com/steveyen/gtreap v0.1.0
 github.com/steveyen/gtreap
 # github.com/tidwall/gjson v1.8.1
@@ -88,13 +90,37 @@ github.com/tidwall/pretty
 github.com/tinylib/msgp/msgp
 # github.com/whosonfirst/go-ioutil v1.0.0
 github.com/whosonfirst/go-ioutil
+# github.com/whosonfirst/go-sanitize v0.1.0
+github.com/whosonfirst/go-sanitize
 # github.com/whosonfirst/go-whosonfirst-crawl v0.2.1
 github.com/whosonfirst/go-whosonfirst-crawl
+# github.com/whosonfirst/go-whosonfirst-flags v0.4.3
+github.com/whosonfirst/go-whosonfirst-flags
+github.com/whosonfirst/go-whosonfirst-flags/existential
+github.com/whosonfirst/go-whosonfirst-flags/geometry
+github.com/whosonfirst/go-whosonfirst-flags/placetypes
 # github.com/whosonfirst/go-whosonfirst-iterate v1.2.0
 ## explicit
 github.com/whosonfirst/go-whosonfirst-iterate/emitter
 github.com/whosonfirst/go-whosonfirst-iterate/filters
 github.com/whosonfirst/go-whosonfirst-iterate/iterator
+# github.com/whosonfirst/go-whosonfirst-placetypes v0.3.0
+github.com/whosonfirst/go-whosonfirst-placetypes
+github.com/whosonfirst/go-whosonfirst-placetypes/placetypes
+# github.com/whosonfirst/go-whosonfirst-search v0.0.4
+## explicit
+github.com/whosonfirst/go-whosonfirst-search/filter
+github.com/whosonfirst/go-whosonfirst-search/fulltext
+# github.com/whosonfirst/go-whosonfirst-sources v0.1.0
+github.com/whosonfirst/go-whosonfirst-sources
+github.com/whosonfirst/go-whosonfirst-sources/sources
+# github.com/whosonfirst/go-whosonfirst-spr v0.1.0
+## explicit
+github.com/whosonfirst/go-whosonfirst-spr
+# github.com/whosonfirst/go-whosonfirst-spr/v2 v2.0.0
+github.com/whosonfirst/go-whosonfirst-spr/v2
+# github.com/whosonfirst/go-whosonfirst-uri v1.0.1
+github.com/whosonfirst/go-whosonfirst-uri
 # github.com/whosonfirst/walk v0.0.1
 github.com/whosonfirst/walk
 # github.com/willf/bitset v1.1.10
