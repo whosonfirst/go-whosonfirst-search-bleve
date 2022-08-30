@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"flag"
-	"github.com/whosonfirst/go-whosonfirst-iterate/iterator"
+	"github.com/whosonfirst/go-whosonfirst-iterate/v2/iterator"
 	wof_bleve "github.com/whosonfirst/go-whosonfirst-search-bleve"
 	"io"
 	"log"
